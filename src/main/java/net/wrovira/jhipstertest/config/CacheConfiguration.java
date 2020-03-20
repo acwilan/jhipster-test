@@ -38,6 +38,18 @@ public class CacheConfiguration {
             createCache(cm, net.wrovira.jhipstertest.domain.User.class.getName());
             createCache(cm, net.wrovira.jhipstertest.domain.Authority.class.getName());
             createCache(cm, net.wrovira.jhipstertest.domain.User.class.getName() + ".authorities");
+            createCache(cm, net.wrovira.jhipstertest.domain.Region.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Country.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Location.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Department.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Department.class.getName() + ".employees");
+            createCache(cm, net.wrovira.jhipstertest.domain.Task.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Task.class.getName() + ".jobs");
+            createCache(cm, net.wrovira.jhipstertest.domain.Employee.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, net.wrovira.jhipstertest.domain.Job.class.getName());
+            createCache(cm, net.wrovira.jhipstertest.domain.Job.class.getName() + ".tasks");
+            createCache(cm, net.wrovira.jhipstertest.domain.JobHistory.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
